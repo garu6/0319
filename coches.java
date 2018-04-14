@@ -30,7 +30,7 @@ public class coches
     
     
     public void getDetails(){
-        System.out.println(marca + modelo + añoFabricacion + potencia);
+        System.out.println(marca + modelo + añoFabricacion + potencia + kilometros);
         
     }
     
