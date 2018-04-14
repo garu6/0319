@@ -27,12 +27,34 @@ public class coches
         this.añoFabricacion = añoFabricacion;
         this.potencia = potencia;
     }
+    
+    
+    public void getDetails(){
+        System.out.println(marca + modelo + añoFabricacion + potencia);
+        
+    }
+    
+    
+    public void setkilometros(int kilometrosCoche){
+        kilometros = kilometrosCoche;
+    }
+    
+    public int getKilometros(){
+        return kilometros;
+        
+    }
+    
+    
+    public int getPotencia(){
+        return potencia;
+    }
+    
+    
+    public String getMArca(){
+        return marca;
 }
 
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    
+public  int getAñoFabricacion(){
+    return añoFabricacion;
+}
+   }
