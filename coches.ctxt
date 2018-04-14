@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=coches
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ coches\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=marca\ modelo\ color\ a\u00F1oFabricacion\ potencia
+comment1.target=coches(java.lang.String,\ java.lang.String,\ java.lang.String,\ int,\ int)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ coches\r\n
+numComments=2
