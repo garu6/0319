@@ -16,7 +16,6 @@ public class concesionario
     public concesionario()
     {
         concesionario = new ArrayList<coches>();
-        
     }
 
 
@@ -27,7 +26,6 @@ public class concesionario
 
 public void listarCoches(){
    int indice = 0;
-   
    for (coches elemento : concesionario){
        
        System.out.println(indice + "  " +  elemento.getDetails());
