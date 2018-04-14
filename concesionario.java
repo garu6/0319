@@ -1,4 +1,4 @@
-
+import java.util.ArrayList;
 /**
  * Write a description of class concesionario here.
  * 
@@ -7,27 +7,31 @@
  */
 public class concesionario
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
+    private ArrayList<coches> concesionario;
+    private coches coche;
+    
     /**
      * Constructor for objects of class concesionario
      */
     public concesionario()
     {
-        // initialise instance variables
-        x = 0;
+        concesionario = new ArrayList<coches>();
+        
     }
 
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+
+    public void añadirCoche(String marca, String modelo , String color, int añoFabricacion, int potencia)
+{
+    concesionario.add(new coches(marca,modelo,color,añoFabricacion,potencia));
+}
+
+public void listarCoches(){
+   int indice = 0;
+   
+   for (coches elemento : concesionario){
+       
+       System.out.println(indice + "  " +  elemento.getDetails());
+       indice++;
     }
+}
 }

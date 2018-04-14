@@ -19,44 +19,66 @@ public class coches
     /**
      * Constructor for objects of class coches
      */
-    public coches( String marca, String modelo, String color, int añoFabricacion , int potencia )
+    public coches(String marca, String modelo , String color, int añoFabricacion, int potencia)
     {
+        setDetails(marca,  modelo ,  color, añoFabricacion,  potencia);
         kilometros =0;
+        indiceObjeto = 0;
+    }
+    
+    
+    private void setDetails(String marca, String modelo , String color, int añoFabricacion, int potencia){
         this.marca = marca;
         this.modelo = modelo;
         this.color = color;
         this.añoFabricacion = añoFabricacion;
         this.potencia = potencia;
-        indiceObjeto =0;
     }
-    
-    
-    public void getDetails(){
-        System.out.println(marca + " - " +  modelo + " - " + añoFabricacion + " - "+ potencia + " - "  + kilometros);
+    //metodo que devuelve todas las caracteristicas del objeto
+    public String getDetails(){
         
+        String adevolver = "marca: " + marca + " - " + "modelo: " + modelo + " - " +  "color: "+ color + " - " +  "añoFabricacion: " +  añoFabricacion + " - "+  "potencia: " + potencia + " - " + "kilometros: " + kilometros;
+        
+        return adevolver;
     }
     
+    //metodo que permite fijar los kilometros del coche
     
     public void setkilometros(int kilometrosCoche){
         kilometros = kilometrosCoche;
     }
+    //metodo que muestra los kilometros del coche
     
     public int getKilometros(){
         return kilometros;
         
     }
     
-    
+    //metodo que muestra la potencia del coche
     public int getPotencia(){
         return potencia;
     }
     
-    
+    //metodo que muestra la marca del coche
     public String getMArca(){
         return marca;
 }
 
+//metodo que muestra el año de fabricacion del coche
 public  int getAñoFabricacion(){
     return añoFabricacion;
+}
+
+
+public int getIndice(){
+    return indiceObjeto;
+    
+
+}
+
+public int incrementIndice(){
+    indiceObjeto++;
+    
+    return indiceObjeto;
 }
    }
