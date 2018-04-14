@@ -14,7 +14,8 @@ public class coches
     private int añoFabricacion;
     private int kilometros;
     private int potencia;
-
+    
+    private int indiceObjeto;
     /**
      * Constructor for objects of class coches
      */
@@ -26,11 +27,12 @@ public class coches
         this.color = color;
         this.añoFabricacion = añoFabricacion;
         this.potencia = potencia;
+        indiceObjeto =0;
     }
     
     
     public void getDetails(){
-        System.out.println(marca + modelo + añoFabricacion + potencia + kilometros);
+        System.out.println(marca + " - " +  modelo + " - " + añoFabricacion + " - "+ potencia + " - "  + kilometros);
         
     }
     
