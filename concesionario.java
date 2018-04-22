@@ -119,8 +119,7 @@ public void ordenarPorpotencia(){
 
 public void modificarPotencia(int coche ,  int nuevaPotencia){
             concesionario.get(coche-1).setPotencia(nuevaPotencia);
-            
-            
+
     }
     
     
