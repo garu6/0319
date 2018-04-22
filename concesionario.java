@@ -84,7 +84,6 @@ public void ordenarPoraño(){
 public void ordenarPorpotencia(){
   ArrayList<coche> coleccion = new ArrayList<>();
         coleccion.addAll(concesionario);
-   
         if (coleccion.size() > 0){
             while(coleccion.size() > 0){
                 coche masxPotencia = coleccion.get(0);
