@@ -132,8 +132,7 @@ public void modificarPotencia(int coche ,  int nuevaPotencia){
                 it.remove();
             }
         }
-        
-        
+ 
     }
     
     
