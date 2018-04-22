@@ -5,13 +5,13 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class coches
+public class coche 
 {
     // instance variables - replace the example below with your own
     private String marca;
     private String modelo;
     private String color;
-    private int añoFabricacion;
+    private int fechaFabricacion;
     private int kilometros;
     private int potencia;
     
@@ -19,25 +19,28 @@ public class coches
     /**
      * Constructor for objects of class coches
      */
-    public coches(String marca, String modelo , String color, int añoFabricacion, int potencia)
+    public coche(String marca, String modelo , String color, int fechaFabricacion, int potencia)
     {
-        setDetails(marca,  modelo ,  color, añoFabricacion,  potencia);
-        kilometros =0;
+        setDetails(marca,  modelo ,  color, fechaFabricacion, potencia);
+        kilometros = 0;
         indiceObjeto = 0;
     }
     
     
-    private void setDetails(String marca, String modelo , String color, int añoFabricacion, int potencia){
+   
+    
+    
+    private void setDetails(String marca, String modelo , String color , int fechaFabricacion, int potencia){
         this.marca = marca;
         this.modelo = modelo;
         this.color = color;
-        this.añoFabricacion = añoFabricacion;
+        this.fechaFabricacion = fechaFabricacion;
         this.potencia = potencia;
     }
     //metodo que devuelve todas las caracteristicas del objeto
     public String getDetails(){
         
-        String adevolver = "marca: " + marca + " - " + "modelo: " + modelo + " - " +  "color: "+ color + " - " +  "añoFabricacion: " +  añoFabricacion + " - "+  "potencia: " + potencia + " - " + "kilometros: " + kilometros;
+        String adevolver = "marca: " + marca + " - " + "modelo: " + modelo + " - " +  "color: "+ color +  " - " +"fechaFabricacion: " + fechaFabricacion + " - " +"potencia: " + potencia +  " - " +"kilometros: " + kilometros;
         
         return adevolver;
     }
@@ -48,6 +51,14 @@ public class coches
         kilometros = kilometrosCoche;
     }
     //metodo que muestra los kilometros del coche
+    
+    public void setPotencia(int potencianueva){
+        potencia = potencianueva;
+        
+        
+        
+    }
+    
     
     public int getKilometros(){
         return kilometros;
@@ -60,13 +71,17 @@ public class coches
     }
     
     //metodo que muestra la marca del coche
-    public String getMArca(){
+    public String getMarca(){
         return marca;
 }
 
 //metodo que muestra el año de fabricacion del coche
-public  int getAñoFabricacion(){
-    return añoFabricacion;
+public  int getfechaFabricacion(){
+    return fechaFabricacion;
+}
+public void setfechaFabricacion(int fecha){
+    this.fechaFabricacion = fecha;
+    
 }
 
 
